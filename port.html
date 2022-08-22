@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Frontend developer</title>
+  </head>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="port.css" />
+  <script
+    src="https://kit.fontawesome.com/115026860d.js"
+    crossorigin="anonymous"
+  ></script>
+  <body>
+    <div class="header" id="header">
+      <div class="container">
+        <nav>
+          <img src="#" alt="logo" />
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Service</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fas fa-times" onclick="closemenu()"></i>
+          </ul>
+          <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="text">
+          <p>Frontend Developer</p>
+          <h1>
+            Hi, I'm <span>Munnawar</span><br />
+            Hussain
+          </h1>
+        </div>
+      </div>
+    </div>
+
+    <!-- ABOUT ME -->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="col-1"><img src="/pro2.jpg" /></div>
+          <div class="col-2">
+            <h1 class="sub-title">About me</h1>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Doloremque magni culpa placeat totam, voluptatem delectus
+              similique. Eum repellat obcaecati sapiente. Amet perspiciatis
+              deleniti similique provident optio voluptates accusantium neque
+              quam?
+            </p>
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skill
+              </p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li><span>Figma</span><br />Designing web interfaces</li>
+                <li>
+                  <span>Web development</span><br />Designing responsive website
+                </li>
+                <li><span>Bootstrap</span><br />Css framework</li>
+                <li><span>React js</span><br />Javascript framework</li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li><span>2022</span><br />Bachelors of commerce</li>
+                <li><span>2019</span><br />12th</li>
+                <li><span>2017</span><br />10th</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- SERVICE -->
+    <div id="services">
+      <div class="container">
+        <h1 class="sub-title">Services</h1>
+        <div class="services-list">
+          <div>
+            <i class="fas fa-crop-alt"></i>
+            <h2>Web Design</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus
+              libero magni nostrum repellendus, perferendis eum.
+            </p>
+            <a href="#">Know more</a>
+          </div>
+          <div>
+            <i class="fab fa-wordpress"></i>
+            <h2>Wordpress website</h2>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi
+              nisi incidunt ut fugiat eaque magnam!
+            </p>
+            <a href="#">Know more</a>
+          </div>
+          <div>
+            <i class="fas fa-code"></i>
+            <h2>Frontend Development</h2>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet et
+              a inventore magni! Aliquam, culpa!.
+            </p>
+            <a href="#">Know more</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- PORTFOLIO -->
+    <div class="portfolio" id="portfolio">
+      <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="worklist">
+          <div class="work">
+            <img src="/work1.jpg" alt="" />
+            <div class="layer">
+              <h3>Calculator</h3>
+              <p>
+                description Lorem ipsum, dolor sit amet consectetur adipisicing
+                elit. Nihil, soluta?
+              </p>
+              <a href="#"><i class="fas fa-external-link-alt"></i> </a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="/work2.jpg" alt="" />
+            <div class="layer">
+              <h3>Color</h3>
+              <p>
+                description Lorem ipsum, dolor sit amet consectetur adipisicing
+                elit. Nihil, soluta?
+              </p>
+              <a href="#"><i class="fas fa-external-link-alt"></i> </a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="/work3.jpg" alt="" />
+            <div class="layer">
+              <h3>Game</h3>
+              <p>
+                description Lorem ipsum, dolor sit amet consectetur adipisicing
+                elit. Nihil, soluta?
+              </p>
+              <a href="#"><i class="fas fa-external-link-alt"></i> </a>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+      </div>
+    </div>
+    <!-- CONTACT -->
+    <div id="contact" >
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="subtitle">Contact Me</h1>
+            <p><i class="fas fa-paper-plane"></i> munnawarmallick@gmail.com</p>
+            <p><i class="fas fa-phone-square-alt"></i> 7838837924</p>
+            <div class="social-icon">
+              <a href="https://www.facebook.com/munnawar.mallick"><i class="fab fa-facebook"></i></a>
+              <a href="https://twitter.com/Munnawar888"><i class="fab fa-twitter-square"></i></a>
+              <a href="https://www.instagram.com/munnawar888/"><i class="fab fa-instagram"></i></a>
+              <a href="https://www.linkedin.com/in/munnawar-hussain-186a3b221/"><i class="fab fa-linkedin"></i></a>
+              <a href="https://github.com/Munnawar888"><i class="fab fa-github"></i></a>
+            </div>
+            <a href="/CV. (1).docx" download class="btn btn2">Download CV</a>
+          </div>
+          <div class="contact-right">
+            <form>
+              <input type="text" name="Name" placeholder="Your Name" required />
+              <input
+                type="email"
+                name="Email"
+                placeholder="Your Email"
+                required
+              />
+              <textarea
+                name="Message"
+                rows="6"
+                placeholder="Your Message"
+              ></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>
+  </body>
+  <script src="/port.js"></script>
+
+</html>
